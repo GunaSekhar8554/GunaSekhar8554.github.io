@@ -14,6 +14,11 @@
     font-family: var(--f3);
 }
 
+/** Spacing **/
+.container-lg {
+  padding: 2rem 20vw;
+}
+
 /** Typography **/
 h1,
 h2,
