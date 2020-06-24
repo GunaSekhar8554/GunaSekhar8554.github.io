@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="..\style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 ## Player-Avatar Relationships and Physiological Responsivity (MSc Thesis)
