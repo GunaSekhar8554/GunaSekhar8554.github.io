@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Libre+Franklin:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 :root {
     --c1: #e83151;
     --c2: #02394a;
@@ -19,35 +21,39 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 h1 {
-  font-family: var(--f1);
-  font-size: 2rem;
+  	font-family: var(--f1);
+	color: var(--c1);
+	font-size: 4rem;
+	padding: 0.5rem 0;
 }
-h2,
-h3,
-h4 {
-  font-family: var(--f2);
+h2 { 
+	font-family: var(--f1);
+	font-size: 2rem;
+}
+h3, h4 {
+  font-family: var(--f2) !important;
 }
 p {
-  margin-block-start: 0;
+  margin-block-start: 0 !important;
 }
 a {
   color: var(--c1);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
-  color: var(--c3)
+  color: var(--c3) !important;
 }
 
 i {
-  margin-right: 2px;
+  margin-right: 2px !important;
 }
 
 blockquote {
-  background-color: var(--c5);
-  border-left: 10px solid var(--c3);
-  padding: 2rem;
-  margin: 1rem;
+  background-color: var(--c5) !important;
+  border-left: 10px solid var(--c3) !important;
+  padding: 2rem !important;
+  margin: 1rem !important;
 }
