@@ -1,64 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Libre+Franklin:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;577&display=swap');
 
 :root {
-    --c1: #e83151;
-    --c2: #02394a;
-    --c3: #c3dfe0;
-    --c4: #2b2d42;
-    --c5: #f7f7f2;
-    --f1: "EB Garamond", serif;
-    --f2: "Libre Franklin", sans-serif;
-    --f3: "Open Sans", sans-serif;
-    font-size: 16px;
-    color: var(--c4);
-    font-family: var(--f3);
+  font-family: 'Didact Gothic', sans-serif;
+  
+  --orange: #F4794A;
+  --offwhite: #f2f2f3;
+  --grey: #969799;
 }
 
-/** Spacing **/
-.markdown-body {
-  padding: 2rem 20vw;
+html {
+  background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+content {
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+  width: 60%;
+  max-width: 1000px;
+  padding: 1rem 2rem;
+  border: 1rem solid white;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+  background-color: var(--offwhite)
+}
+#write {
+  width: 100% !important;
+}
+@media only screen and (max-width: 1000px) {
+  content {
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+}
+footer {
+  background-color: var(--orange) !important;
+  color: white !important;
+  right: 0 !important;
+}
+/** Headings **/
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: underline white;
+  
+}
+h1, h3, h5 {
+  color: black;
+}
+h2, h4, h6 {
+  color: var(--orange);
 }
 
-/** Typography **/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 1rem !important;
-}
-h1 {
-  	font-family: var(--f1);
-	color: var(--c1);
-	font-size: 4rem;
-	padding: 0.5rem 0;
-}
-h2 { 
-	font-family: var(--f1);
-	font-size: 2rem;
-}
-h3, h4 {
-  font-family: var(--f2) !important;
-}
+/** Font setting **/
 p {
-  margin-block-start: 0 !important;
+  min-width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
+
+/** Lists **/
+li::marker {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+
+/** Code **/
+code {
+  line-height: 1.5rem;
+  font-family: Inconsolata;
+}
+pre {
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: white;
+}
+
+/** Links **/
 a {
-  color: var(--c1);
-  text-decoration: none !important;
+  text-decoration: none;
+  color: var(--orange)
 }
 a:hover {
-  color: var(--c3) !important;
+  color: var(--grey)
+}
+a:visited {
+  color: var(--grey)
+}
+a:active {
+  background-color: white;
+  color: var(--orange);
 }
 
-i {
-  margin-right: 2px !important;
+/** Emphasis **/
+del {
+  text-decoration-color: var(--orange);
+  text-decoration-style: wavy;
 }
 
-blockquote {
-  background-color: var(--c5) !important;
-  border-left: 10px solid var(--c3) !important;
-  padding: 2rem !important;
-  margin: 1rem !important;
+/** Decoration **/
+hr {
+  border: 2px solid white;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+td {
+  border: 1px solid white;
+  background-color: white;
+  padding: 1rem;
+}
+th {
+  color: white;
+  background-color: var(--orange);
+  padding: 1rem;
 }
