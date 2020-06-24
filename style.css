@@ -12,6 +12,42 @@
     font-family: var(--f3);
 }
 
+/** Typography **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
 h1 {
-  color: var(--c1)
+  font-family: var(--f1);
+  font-size: 2rem;
+}
+h2,
+h3,
+h4 {
+  font-family: var(--f2);
+}
+p {
+  margin-block-start: 0;
+}
+a {
+  color: var(--c1);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--c3)
+}
+
+i {
+  margin-right: 2px;
+}
+
+blockquote {
+  background-color: var(--c5);
+  border-left: 10px solid var(--c3);
+  padding: 2rem;
+  margin: 1rem;
 }
