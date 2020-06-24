@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="whitelines.css">
-
 ## Player-Avatar Relationships and Physiological Responsivity (MSc Thesis)
 My thesis research looks at physiological measures of human-avatar relationships; how does a player's relationship with their avatar mediate their physiological responses to in-game events?
 
