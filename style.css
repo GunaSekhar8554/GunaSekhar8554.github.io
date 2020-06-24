@@ -1,0 +1,17 @@
+:root {
+    --c1: #e83151;
+    --c2: #02394a;
+    --c3: #c3dfe0;
+    --c4: #2b2d42;
+    --c5: #f7f7f2;
+    --f1: "EB Garamond", serif;
+    --f2: "Libre Franklin", sans-serif;
+    --f3: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: var(--c4);
+    font-family: var(--f3);
+}
+
+h1 {
+  color: var(--c1)
+}
