@@ -53,7 +53,7 @@ body > header {
   box-sizing: border-box;
   padding: 10vh 20vw;
   
-  background: url("http://toddparsons.co.uk/Cover Texture.png") fixed;
+  background: url("../img/Site/cover-texture.png") fixed;
   border-bottom: 4px solid var(--c4);
 
 }
