@@ -1,0 +1,73 @@
+/** Banner **/
+body > header {
+  /* Contents */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10vh 20vw;
+
+  background: url("../img/Site/cover-texture.png") fixed;
+  border-bottom: 4px solid var(--offblack);
+}
+
+.headbox {
+  display: grid;
+  position: relative;
+  grid-template-columns: [left] 4rem [picleft] auto [picright] auto [right];
+  grid-template-rows: [top] 5rem [biotop] 5rem 5rem [biobottom] 5rem [bottom];
+
+  justify-items: center;
+  align-items: center;
+
+  background-color: var(--offwhite);
+  border: 4px solid var(--offblack);
+}
+
+.headbox a {
+    position: relative;
+    background-color: var(--offwhite);
+    grid-column-start: left;
+
+}
+.headbox a img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 25%;
+  filter: url(#pink);
+}
+.headbox a img:hover {
+  background-color: var(--pink);
+  filter: none;
+}
+
+.headbox > img {
+  grid-row-start: top;
+  grid-row-end: bottom;
+  grid-column-start: picleft;
+
+  position: relative;
+  width: 20rem;
+  height: calc(100% + 4rem);
+  max-height: auto;
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 110vh) {
+  .headbox > img {
+    display: none;
+  }
+}
+
+.headbox div {
+  grid-column-start: picright;
+  grid-row-start: biotop;
+  grid-row-end: biobottom;
+
+  padding: 4rem;
+}

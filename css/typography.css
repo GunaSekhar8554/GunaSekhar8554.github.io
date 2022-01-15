@@ -1,0 +1,182 @@
+/* Sans */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Serif */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Blockquote Decoration */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+      --serif: "Bitter";
+      --sans: "Outfit";
+      --mono: "JetBrains";
+
+      font: normal normal 300 14pt var(--sans); /* Root Font */
+      color: var(--c4); /* Root Font Colour */
+}
+
+/** Headings **/
+.headbox h1 {
+  font: normal normal 400 54pt var(--serif);
+  color: var(--offblack);
+
+  border-bottom: 2px solid var(--pink);
+
+  margin-block-start: 24pt;
+  margin-block-end: 12pt;
+}
+
+h1 {
+  font: normal normal 600 54pt var(--serif);
+  color: var(--pink);
+
+  margin-block-start: 32pt;
+  margin-block-end: 6pt;
+}
+
+h2 {
+  font: normal normal 500 24pt var(--sans);
+
+  margin-block-start: 32pt;
+  margin-block-end: 6pt;
+}
+
+h3 {
+  font: normal normal 500 16pt var(--sans);
+
+  margin-block-start: 12pt;
+  margin-block-end: 6pt;
+}
+
+h4 {
+    font: normal normal 500 14pt var(--sans);
+
+    margin-block-start: 12pt;
+    margin-block-end: 3pt;
+}
+
+h5 {
+    font: normal normal 600 12pt var(--sans);
+
+    margin-block-start: 6pt;
+    margin-block-end: 2pt;
+}
+
+h6 {
+    font: normal normal 600 10pt var(--sans);
+
+    margin-block-start: 6pt;
+    margin-block-end: 0pt;
+}
+
+.sub {
+  margin-block-start: -6pt;
+  font-style: italic;
+}
+
+
+/** Text Blocks **/
+p {
+  margin-block-start: 0pt;
+  margin-block-end: 7pt;
+}
+
+blockquote {
+  position: relative;
+  background-color: var(--offwhite);
+  padding: 1rem 2.5rem;
+
+  margin-block-start: 16pt;
+  margin-block-end: 16pt;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+blockquote:before {
+  content: '\201C';
+  font: normal normal 400 32pt Righteous;
+  color: var(--pink);
+
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+blockquote:after {
+  content: '\201D';
+  font: normal normal 400 32pt Righteous;
+  color: var(--pink);
+
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+}
+blockquote > footer {
+  margin-block-start: 8pt;
+  margin-block-end: 8pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
+pre {
+  position: relative;
+
+  font: normal normal 500 12pt JetBrains Mono;
+  background-color: var(--offwhite);
+  padding: 1rem;
+
+  margin-block-start: 16pt;
+  margin-block-end: 16pt;
+}
+
+hr {
+    margin-block-start: 18pt;
+    margin-block-end: 18pt;
+
+    width: 20%;
+    border-style: solid;
+    border-color: var(--offwhite);
+    border-width: 1px;
+}
+article hr {
+  border-color: var(--white);
+}
+
+/** Inline Text **/
+a {
+  color: var(--pink);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--teal)
+}
+
+b {
+  font-weight: 500;
+}
+
+code {
+  background-color: var(--offwhite);
+  padding: 4pt;
+}
+
+sup, sub {
+  font-size: 0.5em;
+}
+
+q {
+  display: inline-block;
+  margin-block-start: 6pt;
+  margin-block-end: 12pt;
+}
+q:before {
+  content: '\201C';
+  font: normal normal 400 14pt Righteous;
+  color: var(--pink);
+  padding-right: 3pt;
+}
+q:after {
+  content: '\201D';
+  font: normal normal 400 14pt Righteous;
+  color: var(--pink);
+  padding-left: 3pt;
+}

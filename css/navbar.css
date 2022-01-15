@@ -1,0 +1,37 @@
+nav {
+  position: sticky;
+  bottom: 2rem;
+  top: 2rem;
+  margin-bottom: -15rem;
+
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin-left: calc(100vw - 14rem);
+  z-index: 10;
+}
+nav > a {
+  box-sizing: border-box;
+  padding: 1rem;
+  height: 3rem;
+  min-width: 10rem;
+
+  vertical-align: center;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 1rem;
+  background-color: var(--offblack);
+  color: white;
+  text-decoration: none;
+}
+nav > a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+/** Responsivity **/
+@media screen and (max-width: 80rem) {
+  nav {
+    display: none !important;
+  }
+}
