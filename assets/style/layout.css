@@ -1,8 +1,4 @@
 /** Sections **/
-section {
-  padding: 1rem 20vw;
-}
-
 article {
     position: relative;
     background-color: var(--offwhite);
@@ -22,6 +18,7 @@ body {
 
 main {
   margin-bottom: 10rem;
+  padding: 1rem 20vw;
 }
 
 /** "Read More"s **/

@@ -2,7 +2,6 @@ nav {
   position: sticky;
   bottom: 2rem;
   top: 2rem;
-  margin-bottom: -15rem;
 
   display: flex;
   flex-direction: column;

@@ -1,0 +1,49 @@
+<head>
+    <title>Todd Parsons</title>
+
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/layout.css">
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/header.css">
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/typography.css">
+    <link rel="stylesheet" type="text/css" href="{{src}}/assets/style/elements.css">
+
+    <!--  Twitter Embed  -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!--  Altmetric Citations  -->
+    <script src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+    <script type="text/javascript" src="{{src}}/assets/js/altmetric.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class=headbox>
+            <a href='https://twitter.com/toddeparsons'><img src='{{src}}/assets/img/Site/Twitter.png' /></a>
+            <a href='https://scholar.google.co.uk/citations?user=dPnWdLUAAAAJ&hl=en'><img
+                    src='{{src}}/assets/img/Site/Google Scholar.png' /></a>
+            <a href='https://orcid.org/0000-0002-6192-8414'><img src='{{src}}/assets/img/Site/ORCiD.png' /></a>
+            <a href='https://www.linkedin.com/in/todd-parsons-056a459a'><img src='{{src}}/assets/img/Site/LinkedIn.png' /></a>
+            <img src="{{src}}/assets/img/Site/staff-picture.jpg" />
+            <div>
+                <h1>Todd Parsons</h1>
+                MSC Psychological Research Methods <br>
+                BSc Psychology
+            </div>
+
+        </div>
+    </header>
+    {{navbar}}
+    <main id="content">
+        {{content}}
+        {{breadcrumbs}}
+    </main>
+    <svg height=0px>
+        <filter id="pink" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0.91 0 0 0 0
+                                               0 0.19 0 0 0
+                                               0 0 0.32 0 0
+                                               0 0 0 1 0 " />
+        </filter>
+    </svg>
+</body>
