@@ -90,6 +90,14 @@ td {
 }
 
 /* Citations */
-altmetric-embed {
-    margin: 1rem 0;
+.altmetric-citation {
+  display: grid;
+  grid-template-columns: 4rem auto;
+  align-items: center;
+}
+.altmetric-citation > p {
+  margin: 0;
+}
+.altmetric-embed {
+  margin-right: 1rem;
 }

@@ -1,6 +1,7 @@
 import logging
 import re
 import markdown as md
+import markmoji
 from pathlib import Path
 
 
@@ -51,23 +52,6 @@ class NavBar(list):
         return code
 
 
-class Citation:
-    def __init__(self, label:str, doi:str):
-        self.label = label
-        self.doi = doi
-    
-    def __str__(self):
-        return f"<altmetric-embed data-doi={self.doi}>{self.label}</altmetric-embed>"
-
-
-class Tweet:
-    def __init__(self, link:str):
-        self.link = link
-    
-    def __str__(self):
-        return f"<blockquote class=twitter-tweet><a href='{self.link}'></a></blockquote>"
-
-
 class Page:
     def __init__(self, file:Path, template:Path):
         # Store paths
@@ -92,21 +76,11 @@ class Page:
         """
         Markdown processing to do before converting to HTML
         """
-        # Process altmetric citations
-        def _altmetric(match):
-            obj = Citation(label=match.group(1), doi=match.group(2))
-            return str(obj)
-        content = re.sub("🏐\[(.*)\]\((.*)\)", _altmetric, content)
-        # Process tweets
-        def _tweet(match):
-            obj = Tweet(link=match.group(2))
-            return str(obj)
-        content = re.sub("🐦\[(.*)\]\((.*)\)", _tweet, content)
 
         return content
     
     def process(self, content:str):
-        content = md.markdown(content, extensions=["extra", "admonition", "nl2br", "toc"])
+        content = md.markdown(content, extensions=[markmoji.Markmoji(), "extra", "admonition", "nl2br", "toc"])
 
         return content
     

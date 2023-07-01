@@ -25,9 +25,9 @@ The Games Analysis Workshop (GAW) is a two-day workshop where a diverse selectio
 # Publications
 
 ## Papers
-🏐[Mather, G., & Parsons, T. (2018). Adaptation reveals sensory and decision components in the visual estimation of locomotion speed. *Scientific reports, 8*(1), 13059](https://doi.org/https://doi.org/10.1038/s41598-018-30230-1)
+🏐[Mather, G., & Parsons, T. (2018). Adaptation reveals sensory and decision components in the visual estimation of locomotion speed. *Scientific reports, 8*(1), 13059](https://doi.org/https://doi.org/10.1038/s41598-018-30230-1){markdown: "1"}
 
-🏐[Mather, G., Sharman, R. J., & Parsons, T. (2017). Visual adaptation alters the apparent speed of real-world actions. *Scientific reports, 7*(1), 6738.](https://doi.org/10.1038/s41598-017-06841-5)
+🏐[Mather, G., Sharman, R. J., & Parsons, T. (2017). Visual adaptation alters the apparent speed of real-world actions. *Scientific reports, 7*(1), 6738.](https://doi.org/10.1038/s41598-017-06841-5){markdown: "1"}
 
 ## Conference Proceedings
 
