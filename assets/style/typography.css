@@ -20,11 +20,8 @@
 .headbox h1 {
   font: normal normal 400 54pt var(--serif);
   color: var(--offblack);
-
-  border-bottom: 2px solid var(--pink);
-
   margin-block-start: 24pt;
-  margin-block-end: 12pt;
+  margin-block-end: 0;
 }
 
 h1 {

@@ -79,6 +79,11 @@ figcaption {
   height: 15rem;
 }
 
+/* IPA */
+.IPA::before, .IPA::after {
+  content: "/"
+}
+
 /* Tables */
 table {
   border-collapse:separate;

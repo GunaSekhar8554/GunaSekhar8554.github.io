@@ -27,6 +27,13 @@ body > header {
   border: 4px solid var(--offblack);
 }
 
+.headbox hr {
+  margin-block-start: 0;
+  margin-block-end: 8pt;
+  width: 100%;
+  border-bottom: 2px solid var(--pink);
+}
+
 .headbox a {
     position: relative;
     background-color: var(--offwhite);
