@@ -31,6 +31,8 @@ The Games Analysis Workshop (GAW) is a two-day workshop where a diverse selectio
 
 ## Conference Proceedings
 
+[Parsons, T. (2023). *What's new in PsychoPy 2023.1 and what's coming in 2023.2.* In: Association of Technical Staff in Psychology Annual Conference 2023, 28 - 30 June 2023. ](http://atsip.ac.uk/)
+
 [Parsons, T. (2019). *Pedestal: Building experiments on a solid foundation.* In: Association of Technical Staff in Psychology Annual Conference 2019, 26 - 28 June 2019. ](http://atsip.ac.uk/)
 
 [Mather, G., & Parsons, T. (2017). *Adaptation to the locomotion speed of point-light walkers.* In: European Conference on Visual Perception, 27 - 31 August 2017, Berlin. ](http://eprints.lincoln.ac.uk/29783/)
