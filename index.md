@@ -127,6 +127,12 @@ For more information on the Perception, Action & Cognition group at Lincoln, ple
 
 # Other Projects
 
+### Markmoji
+Markmoji is a Python package which extends the [basic markdown syntax](https://www.markdownguide.org/basic-syntax/) using an easy to understand and quickly readable emoji-based syntax, allowing you to create custom HTML elements from just an emoji, a label and a URL. I created Markmoji for fun as a personal project, inspired mostly by needing an easy way to specify citations on this very website! You can read more about Markmoji [here](https://teparsons.github.io/Markmoji/) and you can install it via:
+```
+pip install markmoji
+```
+
 ### Talking Jobs with Dr Rachel Bromnick
 Talking Jobs is an audio podcast aimed at Psychology students, introducing them to life after uni through interviews with professionals working in Psychology. All episodes are available to listen to for free on [YouTube](https://www.youtube.com/playlist?list=PLAlqARNMz-RzM-IO9iwb-E22X2g9k3cuC). I helped record and edit the videos, as well as [starring in one!](https://www.youtube.com/watch?v=lOEQfUlTxc4).
 
