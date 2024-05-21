@@ -142,6 +142,9 @@ p {
 .altmetric-citation > p {
     margin: 0;
 }
+.altmetric-embed img {
+    box-shadow: none;
+}
 
 article {
     border-left: 2px solid var(--crust);
