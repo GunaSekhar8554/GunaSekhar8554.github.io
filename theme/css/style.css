@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
+
+:root {
+    /* theme colours */
+    --primary: #d9a35d;
+    --secondary: #4862a6;
+    --tertiary: #b75034;
+    /* background colours */
+    --shadow: #00000022;
+    --crust: #d2d2d2;
+    --mantle: #f2f2f2;
+    --base: #ffffff;
+    /* text colour */
+    --text: #161616;
+    color: var(--text);
+    /* fonts */
+    --body: Rubik;
+    --heading: Josefin Sans;
+    --mono: JetBrains Mono;
+    font-family: var(--body);
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* override theme colours */
+        --secondary: #46B1C9;
+        --tertiary: #D4ADCF;
+        /* override background colours */
+        --shadow: #FFFFFF11;
+        --crust: #000000;
+        --mantle: #111318;
+        --base: #212530;
+        /* override text colour */
+        --text: #f2f2f2;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: var(--base);
+}
+
+#content {
+    display: block;
+    position: relative;
+    padding: 3rem;
+    max-width: 48rem;
+    margin: 0 auto 0 auto;
+    border-left: 2px solid var(--primary);
+}
+
+@media screen and (max-width: 80rem) {
+    #toc {
+        display: none;
+    }
+}
+
+#header, #page {
+    min-height: 14rem;
+    margin: 4rem 0;
+    position: relative;
+}
+
+#title {
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--text);
+}
+#tagline, #tagline a {
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+#avatar {
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem;
+    float: right;
+    box-shadow: 0 0 2rem var(--shadow);
+}
+
+#toc {
+    position: absolute;
+    right: calc(100% + 5rem);
+    text-align: right;
+}
+#toc a {
+    display: block;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+}
+
+#socials a {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--tertiary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading);
+    margin-bottom: 0.2rem;
+    margin-top: 1em;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.altmetric-citation {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    align-items: center;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+.altmetric-citation > p {
+    margin: 0;
+}
+
+article {
+    border-left: 2px solid var(--crust);
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--mantle);
+    font-family: var(--mono);
+}
+blockquote + ul {
+    margin-top: 0.5rem;
+    text-align: right;
+    list-style-type: none;
+}
+
+img {
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 0 1rem var(--shadow);
+    margin: 1rem;
+}
