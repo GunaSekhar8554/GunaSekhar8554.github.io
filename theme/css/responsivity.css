@@ -37,6 +37,14 @@
     }
 
 
+    /** Typography **/
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+
     /** Block elements **/
 
     blockquote {
@@ -55,6 +63,4 @@
     #socials {
         font-size: 4rem;
     }
-
-
 }
