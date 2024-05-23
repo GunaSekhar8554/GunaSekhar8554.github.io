@@ -3,7 +3,8 @@
 
 <head>
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-  <link href="{{ 'css/style.css'|url }}" rel="stylesheet">
+  <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
+  <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
   {%- for path in config.extra_css %}
   <link href="{{ path | url }}" rel="stylesheet">
   {%- endfor %}
@@ -16,9 +17,8 @@
   <content id="content">
   <header id="header">
     <p id="tagline">{{ config.theme.tagline }}</p>
-    <img id="avatar" src="{{ nav.homepage.file.url_relative_to(page.file) }}{{ config.theme.avatar }}" />
-    <a href={{nav.homepage.file.url_relative_to(page.file) }}><h1 id="title">{{ config.site_name }}</h1></a>
-    <p id="bio">{{ config.theme.bio }}</p>
+    <img id="avatar" src="{{ config.theme.avatar | url }}" />
+    <a href={{ "." | url }}><h1 id="title">{{ config.site_name }}</h1></a>
     <nav id="socials">
       {% for social in config.theme.socials %}
       <a href={{ social.link }}><i class="fa-brands fa-{{ social.icon }}" alt={{ social.label }}></i></a>
