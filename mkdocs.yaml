@@ -6,7 +6,6 @@ site_dir: docs
 theme:
   name: mkdocs
   custom_dir: theme/
-
   avatar: assets/staff-picture.jpg
   tagline: |
     he/him /<a href="http://ipa-reader.xyz/?text=tɒd%20pɑsənz">tɒd pɑsənz</a>/
@@ -26,11 +25,6 @@ theme:
     - label: LinkedIn
       link: https://www.linkedin.com/in/todd-parsons-056a459a
       icon: linkedin
-
-plugins:
-  - exclude:
-      regex:
-        - "desktop.ini"
 
 markdown_extensions:
   - toc
