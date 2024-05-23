@@ -1,0 +1,60 @@
+/*
+    Hide the table of contents if window is too thin to see it
+*/
+@media screen and (max-width: 80rem) {
+    /** Table of contents **/
+
+    #toc {
+        display: none;
+    }
+}
+
+/*
+    Double the size on various elements when using a touch pointer
+*/
+@media (pointer:coarse) {
+
+    /** Layout **/
+
+    article {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        margin-left: -2rem;
+        padding-left: 2rem;
+        
+    }
+
+    /** Headings **/
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 1rem;
+        margin-top: 2em;
+    }
+
+
+    /** Block elements **/
+
+    blockquote {
+        padding: 4rem;
+    }
+
+    pre {
+        font-size: 2rem;
+    }
+
+
+    .altmetric-embed {
+        display: none;
+    }
+
+    #socials {
+        font-size: 4rem;
+    }
+
+
+}
