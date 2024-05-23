@@ -25,8 +25,11 @@
         margin-top: 2rem;
         margin-bottom: 4rem;
         margin-left: -2rem;
-        padding-left: 2rem;
-        
+        padding-left: 2rem;   
+    }
+
+    #return-top i {
+        margin-right: 2rem;
     }
 
     /** Headings **/

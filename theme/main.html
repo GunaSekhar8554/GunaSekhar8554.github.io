@@ -32,6 +32,9 @@
       {% endfor %}
     </nav>
     {{ page.content }}
+    <a href="#content" id="return-top">
+      <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+    </a>
   </main>
   {% for script in config.extra_javascript %}
   {{ script | script_tag }}

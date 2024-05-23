@@ -67,6 +67,12 @@ article {
     margin: 2rem 0;
 }
 
+#return-top {
+    display: block;
+    text-align: right;
+    margin-top: 4rem;
+}
+
 
 /** Header **/
 
