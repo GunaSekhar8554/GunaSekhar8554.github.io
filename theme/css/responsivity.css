@@ -14,6 +14,11 @@
 */
 @media (pointer:coarse) {
 
+    /** Header **/
+    #socials {
+        font-size: 4rem;
+    }
+
     /** Layout **/
 
     article {
@@ -55,12 +60,7 @@
         font-size: 2rem;
     }
 
-
     .altmetric-embed {
         display: none;
-    }
-
-    #socials {
-        font-size: 4rem;
     }
 }
