@@ -36,6 +36,11 @@
       <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
     </a>
   </main>
+    <footer>
+      {% if config.copyright %}
+      {{ config.copyright }}
+      {% endif %}
+    </footer>
   {% for script in config.extra_javascript %}
   {{ script | script_tag }}
   {% endfor %}
