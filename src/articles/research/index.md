@@ -1,6 +1,9 @@
-# Research
+---
+template: article.html
+title: Research
+---
 
-## How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?
+# How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?
 
 When looking at players' physiological responses to watching an avatar being beaten up in Wii BoxingTM, [Ratan & Dawson (2016)](http://journals.sagepub.com/doi/pdf/10.1177/0093650215570652) found that they responded more when they felt emotionally connected to the avatar. So this physiological response to in-game events is affected in some way by our relationship to the avatar we are playing as.
 

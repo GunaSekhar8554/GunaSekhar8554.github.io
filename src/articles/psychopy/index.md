@@ -1,6 +1,9 @@
-# PsychoPy
+---
+template: article.html
+title: PsychoPy
+---
 
-## User Interface
+# User Interface
 
 One of the most noticeable changes I've helped to make is a graphical overhaul of the interface; replacing the default wx panels and outdated icons with a clean, navigable and more modern looking interface.
 

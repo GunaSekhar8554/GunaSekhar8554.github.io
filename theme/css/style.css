@@ -52,7 +52,6 @@ body {
 /** Layout **/
 
 #header, #page {
-    min-height: 14rem;
     margin: 4rem 0;
     position: relative;
 }
@@ -84,10 +83,19 @@ article {
     margin: 2rem 0;
 }
 
-#return-top {
-    display: block;
-    text-align: right;
+#page-controls {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
     margin-top: 4rem;
+}
+
+#return-home {
+    justify-self: left;
+}
+
+#return-top {
+    justify-self: right;
 }
 
 
