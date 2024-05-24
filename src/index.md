@@ -3,9 +3,9 @@ I'm a Python programmer with a background in psychological research, a hobbyist 
 
 # PsychoPy
 
-[Psychopy](https://opensciencetools.org/#psychopy) is graphical interface for building Psychology experiments, designed to be accurate enough for publication-quality research but intuitive enough for undergraduate students. Since May of 2020, I have been working as a Python developer, improving the front-end user interface and design of PsychoPy.
+[Psychopy](https://psychopy.org) is Python library and accompanying graphical interface for building psychology experiments, designed to be accurate enough for publication-quality research but intuitive enough for undergraduate students. Since May of 2020, I have been working as a Python developer on PsychoPy - mainly focused on improving the user interface and the way PsychoPy Builder writes Python code.
 
-[Read more...](articles/psychopy.md)
+[Read more...](articles/psychopy/index.md)
 
 # Research
 
@@ -13,15 +13,7 @@ Anyone familiar with video gaming can attest to the physiological response we ex
 
 I'm interested in how our relationship to virtual avatars mediates our physiological reactions to events within a virtual environment; if your avatar takes damage in a video game, do you react differently depending on your relationship to that avatar?
 
-## Publications
-<div class="altmetric-citation" markdown="block">
-<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/https://doi.org/10.1038/s41598-018-30230-1"></div>
-[Mather, G., & Parsons, T. (2018). Adaptation reveals sensory and decision components in the visual estimation of locomotion speed. *Scientific reports, 8*(1), 13059](https://doi.org/https://doi.org/10.1038/s41598-018-30230-1)
-</div>
-<div class="altmetric-citation" markdown="block">
-<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/10.1038/s41598-017-06841-5"></div>
-[Mather, G., Sharman, R. J., & Parsons, T. (2017). Visual adaptation alters the apparent speed of real-world actions. *Scientific reports, 7*(1), 6738.](https://doi.org/10.1038/s41598-017-06841-5)
-</div>
+[Read more...](articles/research/index.md)
 
 ## Education
 
@@ -32,8 +24,6 @@ I'm interested in how our relationship to virtual avatars mediates our physiolog
 
 Thesis title: 
 *How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?*
-
-[Read more...](articles/msc.md)
 </article>
 
 <article markdown="block">
@@ -45,21 +35,24 @@ Dissertation title:
 *Relationships between evolutionary threat and spectral slope.*
 </article>
 
-## Games Analysis Workshop 2019
+## Publications
+<div class="altmetric-citation" markdown="block">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/https://doi.org/10.1038/s41598-018-30230-1"></div>
+[Mather, G., & Parsons, T. (2018). Adaptation reveals sensory and decision components in the visual estimation of locomotion speed. *Scientific reports, 8*(1), 13059](https://doi.org/https://doi.org/10.1038/s41598-018-30230-1)
+</div>
+<div class="altmetric-citation" markdown="block">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/10.1038/s41598-017-06841-5"></div>
+[Mather, G., Sharman, R. J., & Parsons, T. (2017). Visual adaptation alters the apparent speed of real-world actions. *Scientific reports, 7*(1), 6738.](https://doi.org/10.1038/s41598-017-06841-5)
+</div>
 
-The Games Analysis Workshop (GAW) is a two-day workshop where a diverse selection of approaches to game analysis are applied to a single game.
-
-[Read more...](articles/gaw2019.md)
-
-
-# Employment history
+# Employment
 
 <article markdown="block">
 ### Python Developer
 **[Open Science Tools Ltd.](https://opensciencetools.org/)**
 *Jan 2021 - Present*
 
-Once my contract under the University of Nottingham expired, I was taken on by OST on a permanent contract to continue improving PsychoPy, particularly the user interface.
+Once my contract under the University of Nottingham expired, I was taken on by OST on a permanent basis to continue working on PsychoPy, particularly the user interface.
 </article>
 
 <article markdown="block">

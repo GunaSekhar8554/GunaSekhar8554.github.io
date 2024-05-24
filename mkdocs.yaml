@@ -1,6 +1,7 @@
 site_name: Todd Parsons
 
 docs_dir: src
+draft_docs: vault
 site_dir: docs
 
 theme:
