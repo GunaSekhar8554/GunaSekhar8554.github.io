@@ -3,6 +3,7 @@
 
 <head>
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  <link rel="icon" type="image/x-icon" href={{ config.favicon }}>
   <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
   <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
   {%- for path in config.extra_css %}
@@ -36,15 +37,16 @@
       <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
     </a>
   </main>
-    <footer>
-      {% if config.copyright %}
-      {{ config.copyright }}
-      {% endif %}
-    </footer>
-  {% for script in config.extra_javascript %}
-  {{ script | script_tag }}
-  {% endfor %}
   </content>
+  <footer id="footer">
+    {% if config.copyright %}
+    {{ config.copyright }}
+    {% endif %}
+
+    {% for script in config.extra_javascript %}
+    {{ script | script_tag }}
+    {% endfor %}
+  </footer>
 </body>
 
 </html>

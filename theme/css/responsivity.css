@@ -28,8 +28,8 @@
         padding-left: 2rem;   
     }
 
-    #return-top i {
-        margin-right: 2rem;
+    i {
+        margin-right: 1em;
     }
 
     /** Headings **/

@@ -43,6 +43,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     background-color: var(--base);
 }
@@ -63,6 +64,12 @@ body {
     max-width: 48rem;
     margin: 0 auto 0 auto;
     border-left: 2px solid var(--primary);
+}
+
+#footer {
+    position: relative;
+    padding: 2rem calc(50% - 24rem);
+    background-color: var(--mantle);
 }
 
 article {
