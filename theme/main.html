@@ -3,7 +3,7 @@
 
 <head>
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-  <link rel="icon" type="image/x-icon" href={{ config.favicon }}>
+  <link rel="icon" type="image/x-icon" href={{ config.theme.favicon }}>
   <link href="{{ 'css/style.css' | url }}" rel="stylesheet">
   <link href="{{ 'css/responsivity.css' | url }}" rel="stylesheet">
   {%- for path in config.extra_css %}
@@ -17,7 +17,7 @@
 <body id="background">
   <content id="content">
   <header id="header">
-    <p id="tagline">{{ config.theme.tagline }}</p>
+    {{ config.theme.tagline | markdown(id="tagline") }}
     <img id="avatar" src="{{ config.theme.avatar | url }}" />
     <a href={{ "." | url }}><h1 id="title">{{ config.site_name }}</h1></a>
     <nav id="socials">
@@ -39,8 +39,8 @@
   </main>
   </content>
   <footer id="footer">
-    {% if config.copyright %}
-    {{ config.copyright }}
+    {% if config.theme.footer %}
+    {{ config.theme.footer | markdown }}
     {% endif %}
 
     {% if config.theme.page_source %}

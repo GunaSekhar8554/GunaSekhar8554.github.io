@@ -3,16 +3,16 @@ site_name: Todd Parsons
 docs_dir: src
 site_dir: docs
 
-favicon: assets/tp.png
-copyright: |
-  Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>, hosted via <a href="https://pages.github.com/">GitHub Pages</a>.
-
 theme:
   name: mkdocs
   custom_dir: theme/
+
+  favicon: assets/tp.png
   avatar: assets/staff-picture.jpg
   tagline: |
-    he/him /<a href="http://ipa-reader.xyz/?text=tɒd%20pɑsənz">tɒd pɑsənz</a>/
+    he/him /[tɒd pɑsənz](http://ipa-reader.xyz/?text=tɒd%20pɑsənz)/
+  footer: |
+      Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/).
   page_source: 
     link: https://github.com/TEParsons/toddparsons
     icon: github
@@ -32,6 +32,9 @@ theme:
     - label: LinkedIn
       link: https://www.linkedin.com/in/todd-parsons-056a459a
       icon: linkedin
+
+hooks:
+  - theme/hooks/md_filter.py
 
 markdown_extensions:
   - toc
