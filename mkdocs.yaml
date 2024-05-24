@@ -5,8 +5,7 @@ site_dir: docs
 
 favicon: assets/tp.png
 copyright: |
-  <p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>, hosted via <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-  <p><a href="https://github.com/TEParsons/toddparsons"><i class="fa-brands fa-github" alt=GitHub></i> Page source</a></p>
+  Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>, hosted via <a href="https://pages.github.com/">GitHub Pages</a>.
 
 theme:
   name: mkdocs
@@ -14,6 +13,9 @@ theme:
   avatar: assets/staff-picture.jpg
   tagline: |
     he/him /<a href="http://ipa-reader.xyz/?text=tɒd%20pɑsənz">tɒd pɑsənz</a>/
+  page_source: 
+    link: https://github.com/TEParsons/toddparsons
+    icon: github
   socials:
     - label: Email
       link: mailto:todd.e.parsons@gmail.com

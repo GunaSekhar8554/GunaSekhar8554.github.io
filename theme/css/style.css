@@ -68,8 +68,14 @@ body {
 
 #footer {
     position: relative;
+    text-align: right;
     padding: 2rem calc(50% - 24rem);
     background-color: var(--mantle);
+}
+
+#page-source {
+    display: block;
+    margin: 1em 0;
 }
 
 article {
