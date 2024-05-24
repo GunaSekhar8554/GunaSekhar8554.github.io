@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Who am I?
 I'm a Python programmer with a background in psychological research, a hobbyist web / graphic designer, a TTRPG enthusiast, and generally an all round tech nerd.
 
@@ -150,13 +154,13 @@ Torillic is designed to look like the official material for Dungeons & Dragons, 
 
 ### LCARS
 
-![LCARS](articles/LCARS/full.png)
+![LCARS](articles/lcars/full.png)
 
 LCARS is designed to look like the fictional LCARS operating system from Star Trek. Like Torillic, I like to use it for TTRPG campaign notes, but in this case the more sci-fi adjacent settings.
 
 ### Whitelines
 
-![Whitelines](articles/Whitelines/full.png)
+![Whitelines](articles/whitelines/full.png)
 
 Whitelines is the theme I use most in my day-to-day markdown editing. It's designed to look like [Whitelines](https://www.whitelinespaper.com/) notepads, which (being a stationery nerd) are my favourite kind of notebook to write on. So it only makes sense to edit markdown on the same kind of paper!
 
@@ -166,3 +170,5 @@ Working with a Python-based graphical user interface (GUI) at Open Science Tools
 
 ### `pygments-gui`
 `pygments-gui` is a plugin for [Pygments](https://pygments.org/), a Python package which takes code and applies syntactic styling to it. The plugin adds classes and methods for using Pygments within a GUI, styling the contents of text controls live in a fast and efficient way.
+
+You can find `pygments-gui` on GitHub [here](https://github.com/TEParsons/pygments-gui).
