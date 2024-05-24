@@ -137,21 +137,32 @@ For more information on the Perception, Action & Cognition group at Lincoln, ple
 
 # Other Projects
 
-### Markmoji
-Markmoji is a Python package which extends the [basic markdown syntax](https://www.markdownguide.org/basic-syntax/) using an easy to understand and quickly readable emoji-based syntax, allowing you to create custom HTML elements from just an emoji, a label and a URL. I created Markmoji for fun as a personal project, inspired mostly by needing an easy way to specify citations on this very website! You can read more about Markmoji [here](https://teparsons.github.io/Markmoji/) and you can install it via:
-```
-pip install markmoji
-```
+## CSS Themes
+As you may be able to tell from this website, I enjoy making CSS themes. It gives me an outlet for my inherent aesthetic snobbery, I find it relaxing making minor tweaks to the spacing of such-and-such element to get a page rendering exactly how I want it.
 
-### Talking Jobs with Dr Rachel Bromnick
-Talking Jobs is an audio podcast aimed at Psychology students, introducing them to life after uni through interviews with professionals working in Psychology. All episodes are available to listen to for free on [YouTube](https://www.youtube.com/playlist?list=PLAlqARNMz-RzM-IO9iwb-E22X2g9k3cuC). I helped record and edit the videos, as well as [starring in one!](https://www.youtube.com/watch?v=lOEQfUlTxc4).
+### Torillic
 
-### Typora
-Typora is a markdown editor, this means that users can type content as they would in generic Notepad apps and this content will be styled according to a [markdown syntax](https://www.markdownguide.org/basic-syntax/) and a customisable CSS file. I've contributed the following CSS themes to Typora:
-- [Torillic](https://theme.typora.io/theme/Torillic/)
-- [Krafty](https://theme.typora.io/theme/Krafty/)
-- [Whitelines](https://theme.typora.io/theme/Whitelines/)
-- [LCARS](https://theme.typora.io/theme/LCARS/)
+![Torillic](articles/torillic/full.png)
 
-### The Cognitive Daisy
-[The Cognitive Daisy](https://doi.org/10.1177%2F1471301216673918) is a visual aid for carers of patients with Alzheimer's and dementia. By representing cognitive functions as coloured petails, it gives carers a comprehensive overview of their patients' capabilities at a glance. I worked on the project as a research assistant, helping develop a guide for carers to understand the science behind the daisy.
+Torillic is designed to look like the official material for Dungeons & Dragons, I use it to write notes for my TTRPG campaigns and to style them once compiled and hosted to wiki-style websites.
+
+[Read more...](articles/torillic/index.md)
+
+### LCARS
+
+![LCARS](articles/LCARS/full.png)
+
+LCARS is designed to look like the fictional LCARS operating system from Star Trek. Like Torillic, I like to use it for TTRPG campaign notes, but in this case the more sci-fi adjacent settings.
+
+### Whitelines
+
+![Whitelines](articles/Whitelines/full.png)
+
+Whitelines is the theme I use most in my day-to-day markdown editing. It's designed to look like [Whitelines](https://www.whitelinespaper.com/) notepads, which (being a stationery nerd) are my favourite kind of notebook to write on. So it only makes sense to edit markdown on the same kind of paper!
+
+## Python GUI
+
+Working with a Python-based graphical user interface (GUI) at Open Science Tools gives me a thorough familiarity with the GUI packages used in Python, sometimes I find myself wishing for certain widgets to exist so in my free time I go ahead and make them.
+
+### `pygments-gui`
+`pygments-gui` is a plugin for [Pygments](https://pygments.org/), a Python package which takes code and applies syntactic styling to it. The plugin adds classes and methods for using Pygments within a GUI, styling the contents of text controls live in a fast and efficient way.
