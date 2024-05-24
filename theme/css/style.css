@@ -91,10 +91,12 @@ article {
 }
 
 #return-home {
+    grid-column-start: 1;
     justify-self: left;
 }
 
 #return-top {
+    grid-column-start: 2;
     justify-self: right;
 }
 
