@@ -21,23 +21,23 @@ I'm interested in how our relationship to virtual avatars mediates our physiolog
 
 ## Education
 
-<article markdown="block">
+@@@
 ### MSc Psychological Research Methods
 **[The University of Lincoln](https://www.lincoln.ac.uk/)**
 *September 2017 - December 2019*
 
 Thesis title: 
 *How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?*
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### BSc Psychology, First Class Honors
 **[The University of Lincoln](https://www.lincoln.ac.uk/)**
 *September 2012 - June 2015*
 
 Dissertation title: 
 *Relationships between evolutionary threat and spectral slope.*
-</article>
+@@@
 
 ## Publications
 <div class="altmetric-citation" markdown="block">
@@ -51,40 +51,40 @@ Dissertation title:
 
 # Employment
 
-<article markdown="block">
+@@@
 ### Python Developer
 **[Open Science Tools Ltd.](https://opensciencetools.org/)**
 *Jan 2021 - Present*
 
 Once my contract under the University of Nottingham expired, I was taken on by OST on a permanent basis to continue working on PsychoPy, particularly the user interface.
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### Python Programmer for Psychopy
 **[The University of Nottingham](https://www.nottingham.ac.uk/)**
 *May 2020 - Jan 2021*
 
 I was hired under a CZI grant to help improve the stability of PsychoPy around the 2020.2 and 2021.1 releases.
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### Psychology Technician
 **[The University of Lincoln](https://www.lincoln.ac.uk/)**
 *January 2017 - May 2020*
 
 As a technician, I assisted staff and students with a variety of technical issues. In particular, scripting in Matlab, creating graphical resources and managing an online research presence.
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### Research Assistant
 **[The University of Lincoln](https://www.lincoln.ac.uk/)**
 *April 2016 - December 2016*
 
 In 2016 I was employed by [Professor George Mather](https://gmresearch2016.blogs.lincoln.ac.uk/) at the University of Lincoln as a research assistant, assisting with the final year of a collaboration between himself and Doctor Rebecca Sharman, looking at early visual processing of [human locomotion](https://www.tandfonline.com/doi/abs/10.1080/14786443408648481").
-</article>
+@@@
 
 ## Awards
-<article markdown="block">
+@@@
 ### Technical Support in Psychology Research Award
 **From:** British Psychological Society, July 2020
 **To:** Psychology Technician Team (University of Lincoln)
@@ -94,9 +94,9 @@ In 2016 I was employed by [Professor George Mather](https://gmresearch2016.blogs
 > [#psychlincs](https://x.com/hashtag/psychlincs) [@bydhifu](https://twitter.com/bydhifu) [@ManOCheese](https://twitter.com/ManOCheese) [@ToddEParsons](https://twitter.com/ToddEParsons) [@___charl](https://twitter.com/___charl)
 
 - *[@PsychLincoln via X](https://x.com/PsychLincoln/status/1282585568032030720)*
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### Team Achievement Award: Best Achievement In Customer Service
 **From:** University of Lincoln, December 2019
 **To:** Psychology Technician Team
@@ -106,38 +106,38 @@ In 2016 I was employed by [Professor George Mather](https://gmresearch2016.blogs
 > Phew, what a list!
 
 - *[@PsychLincoln via X](https://x.com/PsychLincoln/status/1197477709896716288)*
-</article>
+@@@
 
 ## Professional memberships
-<article markdown="block">
+@@@
 ### University and College Union (UCU)
 **Member**
 *January 2017 - Present*
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### University of Lincoln School of Psychology Equality Committee (SPEC)
 **Technician Representative, LGBTQI+ Champion**
 *January 2017 - May 2020*
 
 For more information on the School of Psychology Equality Committee, please see the [SPEC website](https://spec.blogs.lincoln.ac.uk).
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### Association of Technical Staff in Psychology (ATSiP)
 **Member**
 *January 2017 - May 2020*
 
 For more information on the Association of Technical Staff in Psychology, please see the [ATSiP website](https://atsip.ac.uk).
-</article>
+@@@
 
-<article markdown="block">
+@@@
 ### University of Lincoln Perception, Action & Cognition (PAC) Research Group
 **Member**
 *April 2016 - May 2020*
 
 For more information on the Perception, Action & Cognition group at Lincoln, please see the [PAC group website](https://pacgroup.blogs.lincoln.ac.uk/).
-</article>
+@@@
 
 # Other Projects
 

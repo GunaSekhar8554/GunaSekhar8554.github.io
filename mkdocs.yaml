@@ -36,6 +36,7 @@ theme:
 
 hooks:
   - theme/hooks/md_filter.py
+  - theme/hooks/layout.py
 
 markdown_extensions:
   - toc
