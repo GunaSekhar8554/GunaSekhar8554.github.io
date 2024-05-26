@@ -130,6 +130,4 @@ def on_page_markdown(markdown: str, page: pages.Page, config: config.Config, fil
         flags=re.DOTALL
     )
 
-    print(markdown)
-
     return markdown
