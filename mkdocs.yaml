@@ -5,8 +5,7 @@ draft_docs: vault
 site_dir: docs
 
 theme:
-  name: mkdocs
-  custom_dir: theme/
+  name: landing
 
   favicon: assets/tp.png
   avatar: assets/staff-picture.jpg
@@ -23,20 +22,57 @@ theme:
       icon: at
     - label: GitHub
       link: https://github.com/TEParsons
-      icon: github
+      icon: [brands, github]
     - label: ORCiD
       link: https://orcid.org/0000-0002-6192-8414
-      icon: orcid
+      icon: [brands, orcid]
     - label: Google Scholar
       link: https://scholar.google.co.uk/citations?user=dPnWdLUAAAAJ&hl=en
-      icon: google-scholar
+      icon: [brands, google-scholar]
     - label: LinkedIn
       link: https://www.linkedin.com/in/todd-parsons-056a459a
-      icon: linkedin
+      icon: [brands, linkedin]
+  
+  header_layout: 
+    - tagline
+    - ""
+    - title
+    - avatar
+    - socials
+  border_left: 2px solid var(--primary)
+  avatar_size: 16rem
+  round_avatar: True
+  
+  colors:
+    primary: "#d9a35d"
+    secondary: "#4862a6"
+    tertiary: "#b75034"
+    base: "#ffffff"
+    mantle: "#f2f2f2"
+    crust: "#d2d2d2"
+    overlay: "#b2b2b2"
+    text: "#161616"
+    hltext: "#f2f2f2"
+  colors_dark:
+    primary: "#d9a35d"
+    secondary: "#46B1C9"
+    tertiary: "#D4ADCF"
+    base: "#212530"
+    mantle: "#111318"
+    crust: "#050608"
+    overlay: "#000000"
+    text: "#f2f2f2"
+    hltext: "#161616"
+
+  fonts:
+    body: Rubik
+    heading: Josefin Sans
+    mono: JetBrains Mono
+
 
 hooks:
-  - theme/hooks/md_filter.py
-  - theme/hooks/layout.py
+  - hooks/md_filter.py
+  - hooks/layout.py
 
 markdown_extensions:
   - toc
