@@ -65,7 +65,7 @@ theme:
     hltext: "#161616"
 
   fonts:
-    body: Rubik
+    body: Hind
     heading: Josefin Sans
     mono: JetBrains Mono
 
