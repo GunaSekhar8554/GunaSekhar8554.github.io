@@ -53,6 +53,8 @@ theme:
     overlay: "#b2b2b2"
     text: "#161616"
     hltext: "#f2f2f2"
+    footer: var(--text)
+    footer_text: var(--hltext)
   colors_dark:
     primary: "#d9a35d"
     secondary: "#46B1C9"
@@ -63,6 +65,8 @@ theme:
     overlay: "#000000"
     text: "#f2f2f2"
     hltext: "#161616"
+    footer: "#111520"
+    footer_text: var(--text)
 
   fonts:
     body: Hind
