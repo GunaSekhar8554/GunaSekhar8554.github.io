@@ -146,7 +146,7 @@ As you may be able to tell from this website, I enjoy making CSS themes. It give
 
 ### Torillic
 
-<iframe src="https://teparsons.github.io/mkdocs-torillic/dragon/adult_blue_dragon/"></iframe>
+<iframe src="https://teparsons.github.io/mkdocs-torillic/dragon/adult_blue_dragon/" class=zoomed-out></iframe>
 
 Torillic is designed to look like the official material for Dungeons & Dragons, I use it to write notes for my TTRPG campaigns and to style them once compiled and hosted to wiki-style websites.
 
