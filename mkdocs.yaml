@@ -11,8 +11,6 @@ theme:
   avatar: assets/staff-picture.jpg
   tagline: |
     he/him /[tɒd pɑsənz](http://ipa-reader.xyz/?text=tɒd%20pɑsənz)/
-  footer: |
-      Compiled from markdown using [MkDocs](https://www.mkdocs.org/), hosted via [GitHub Pages](https://pages.github.com/).
   page_source: 
     link: https://github.com/TEParsons/toddparsons
     icon: github
