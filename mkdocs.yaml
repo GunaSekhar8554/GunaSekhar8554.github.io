@@ -39,6 +39,7 @@ theme:
   border_left: 2px solid var(--primary)
   avatar_size: 16rem
   round_avatar: True
+  toc_level: 2
   
   # colors
   primary_color: "#d9a35d"
