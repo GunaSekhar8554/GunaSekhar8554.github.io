@@ -21,8 +21,7 @@ jobs:
     
     - name: Install package and dependencies
       run: |
-        python3 -m pip install mkdocs
-        python3 -m pip install git+https://github.com/TEParsons/mkdocs-landing
+        python3 -m pip install mkdocs mkdocs-landing
     
     - name: Build docs
       run: |
