@@ -41,35 +41,31 @@ theme:
   avatar_size: 16rem
   round_avatar: True
   
-  colors:
-    primary: "#d9a35d"
-    secondary: "#4862a6"
-    tertiary: "#b75034"
-    base: "#ffffff"
-    mantle: "#f2f2f2"
-    crust: "#d2d2d2"
-    overlay: "#b2b2b2"
-    text: "#161616"
-    hltext: "#f2f2f2"
-    footer: var(--text)
-    footer_text: var(--hltext)
-  colors_dark:
-    primary: "#d9a35d"
-    secondary: "#46B1C9"
-    tertiary: "#D4ADCF"
-    base: "#212530"
-    mantle: "#111318"
-    crust: "#050608"
-    overlay: "#000000"
-    text: "#f2f2f2"
-    hltext: "#161616"
-    footer: "#111520"
-    footer_text: var(--text)
+  # colors
+  primary_color: "#d9a35d"
+  secondary_color: "#4862a6"
+  tertiary_color: "#b75034"
+  base_color: "#ffffff"
+  mantle_color: "#f2f2f2"
+  crust_color: "#d2d2d2"
+  overlay_color: "#b2b2b2"
+  text_color: "#161616"
+  hltext_color: "#f2f2f2"
+  # colors (dark)
+  primary_color_dark: "#d9a35d"
+  secondary_color_dark: "#46B1C9"
+  tertiary_color_dark: "#D4ADCF"
+  base_color_dark: "#212530"
+  mantle_color_dark: "#111318"
+  crust_color_dark: "#050608"
+  overlay_color_dark: "#000000"
+  text_color_dark: "#f2f2f2"
+  hltext_color_dark: "#161616"
 
-  fonts:
-    body: Hind
-    heading: Josefin Sans
-    mono: JetBrains Mono
+  # fonts
+  body_font: Hind
+  heading_font: Josefin Sans
+  mono_font: JetBrains Mono
 
 
 hooks:
