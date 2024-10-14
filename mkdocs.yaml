@@ -32,12 +32,11 @@ theme:
   
   header_layout: 
     - tagline
-    - ""
     - title
     - avatar
     - socials
   border_left: 2px solid var(--primary)
-  avatar_size: 16rem
+  avatar_size: 12rem
   round_avatar: True
   toc_level: 2
   
