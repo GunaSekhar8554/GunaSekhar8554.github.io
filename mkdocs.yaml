@@ -66,11 +66,6 @@ theme:
   heading_font: Josefin Sans
   mono_font: JetBrains Mono
 
-
-hooks:
-  - hooks/md_filter.py
-  - hooks/layout.py
-
 markdown_extensions:
   - toc
   - attr_list
