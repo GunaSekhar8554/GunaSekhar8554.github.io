@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home - Todd Parsons</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #d9a35d;
+        --secondary: #4862a6;
+        --tertiary: #b75034;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f2f2f2;
+        --crust: #d2d2d2;
+        --overlay: #b2b2b2;
+        --footer: #000000cc;
+        /* text */
+        --text: #161616;
+        --hltext: #f2f2f2;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Josefin Sans, Noto Color Emoji;
+        --body: Hind, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #d9a35d;
+          --secondary: #46B1C9;
+          --tertiary: #D4ADCF;
+          /* shades */
+          --base: #212530;
+          --mantle: #111318;
+          --crust: #050608;
+          --overlay: #000000;
+          --footer: #00000022;
+          /* text */
+          --text: #f2f2f2;
+          --hltext: #161616;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: 2px solid var(--primary);
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #46B1C9;
+      }
+      footer#footer a:hover {
+        color: #D4ADCF;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/tp.png>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsivity.css" rel="stylesheet">  
+    <script src="search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Home -Todd Parsons",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="header">
+    
+    
+     
+    <p id="tagline">he/him /<a href="http://ipa-reader.xyz/?text=tɒd%20pɑsənz">tɒd pɑsənz</a>/</p>
+
+    
+    
+    
+     
+    <h1 id="title"><a href=.>Todd Parsons</a></h1>
+
+    
+    
+    
+     
+    
+    <img id="avatar" src="assets/staff-picture.jpg" />
+    
+
+    
+    
+    
+     
+    <ul id="socials">
+        
+        
+        
+        
+        
+        <li>
+            <a href="mailto:todd.e.parsons@gmail.com"><i class="fa-regular fa-at" alt="Email"></i></a>
+            <div class="social-label">Email</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://github.com/TEParsons"><i class="fa-brands fa-github" alt="GitHub"></i></a>
+            <div class="social-label">GitHub</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://orcid.org/0000-0002-6192-8414"><i class="fa-brands fa-orcid" alt="ORCiD"></i></a>
+            <div class="social-label">ORCiD</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://scholar.google.co.uk/citations?user=dPnWdLUAAAAJ&hl=en"><i class="fa-brands fa-google-scholar" alt="Google Scholar"></i></a>
+            <div class="social-label">Google Scholar</div>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="https://www.linkedin.com/in/todd-parsons-056a459a"><i class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>
+            <div class="social-label">LinkedIn</div>
+        </li>
+        
+    </ul>
+
+    
+    
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#who-am-i">Who am I?</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#psychopy">PsychoPy</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#research">Research</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#education">Education</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#publications">Publications</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#employment">Employment</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#awards">Awards</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#professional-memberships">Professional memberships</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#other-projects">Other Projects</a>
+    
+    <ul>
+    
+    
+    <li class="nav-subitem">
+    <a href="#css-themes">CSS Themes</a>
+    </li>
+    
+    
+    
+    <li class="nav-subitem">
+    <a href="#python-gui">Python GUI</a>
+    </li>
+    
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <h1 id="who-am-i">Who am I?</h1>
+<p>I'm a Python programmer with a background in psychological research, a hobbyist web / graphic designer, a TTRPG enthusiast, and generally an all round tech nerd.</p>
+<h1 id="psychopy">PsychoPy</h1>
+<p><a href="https://psychopy.org">PsychoPy</a> is Python library and accompanying graphical interface for building psychology experiments, designed to be accurate enough for publication-quality research but intuitive enough for undergraduate students. I've been using PsychoPy as a student and technician for many years, and since May 2020 I've been working as a Python developer on PsychoPy. I mostly work on the front-end; improving the look and feel of the app, creating new Components and defining the code which Builder writes for them.</p>
+<p><img alt="PsychoPy Builder 2024.2.2" src="articles/psychopy/screenshots/builder_2024_2_2.png" /></p>
+<p><a href="articles/psychopy/">Read more...</a></p>
+<h1 id="research">Research</h1>
+<p>Anyone familiar with video gaming can attest to the physiological response we experience following certain in-game events: a racing heartbeat as you narrowly avoid an enemy attack or sweaty palms as you make a risky play with for a big payoff. Within gaming communities, the term "<a href="https://www.urbandictionary.com/define.php?term=Sweaty Tryhard">sweaty</a>" is even used as slang for taking the game too seriously.</p>
+<p>I'm interested in how our relationship to virtual avatars mediates our physiological reactions to events within a virtual environment; if your avatar takes damage in a video game, do you react differently depending on your relationship to that avatar?</p>
+<p><a href="articles/research/">Read more...</a></p>
+<h2 id="education">Education</h2>
+<article>
+<h3 id="msc-psychological-research-methods">MSc Psychological Research Methods</h3>
+<p><strong><a href="https://www.lincoln.ac.uk/">The University of Lincoln</a></strong><br />
+<em>September 2017 - December 2019</em></p>
+<p>Thesis title: <br />
+<em>How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?</em></p>
+</article>
+<article>
+<h3 id="bsc-psychology-first-class-honors">BSc Psychology, First Class Honors</h3>
+<p><strong><a href="https://www.lincoln.ac.uk/">The University of Lincoln</a></strong><br />
+<em>September 2012 - June 2015</em></p>
+<p>Dissertation title: <br />
+<em>Relationships between evolutionary threat and spectral slope.</em></p>
+</article>
+<h2 id="publications">Publications</h2>
+<div class="altmetric-citation">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/https://doi.org/10.1038/s41598-018-30230-1"></div>
+<p><a href="https://doi.org/https://doi.org/10.1038/s41598-018-30230-1">Mather, G., &amp; Parsons, T. (2018). Adaptation reveals sensory and decision components in the visual estimation of locomotion speed. <em>Scientific reports, 8</em>(1), 13059</a></p>
+</div>
+<div class="altmetric-citation">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="https://doi.org/10.1038/s41598-017-06841-5"></div>
+<p><a href="https://doi.org/10.1038/s41598-017-06841-5">Mather, G., Sharman, R. J., &amp; Parsons, T. (2017). Visual adaptation alters the apparent speed of real-world actions. <em>Scientific reports, 7</em>(1), 6738.</a></p>
+</div>
+<h1 id="employment">Employment</h1>
+<article>
+<h3 id="python-developer">Python Developer</h3>
+<p><strong><a href="https://opensciencetools.org/">Open Science Tools Ltd.</a></strong><br />
+<em>Jan 2021 - Present</em></p>
+<p>Once my contract under the University of Nottingham expired, I was taken on by OST on a permanent basis to continue working on PsychoPy, particularly the user interface.</p>
+</article>
+<article>
+<h3 id="python-programmer-for-psychopy">Python Programmer for Psychopy</h3>
+<p><strong><a href="https://www.nottingham.ac.uk/">The University of Nottingham</a></strong><br />
+<em>May 2020 - Jan 2021</em></p>
+<p>I was hired under a CZI grant to help improve the stability of PsychoPy around the 2020.2 and 2021.1 releases.</p>
+</article>
+<article>
+<h3 id="psychology-technician">Psychology Technician</h3>
+<p><strong><a href="https://www.lincoln.ac.uk/">The University of Lincoln</a></strong><br />
+<em>January 2017 - May 2020</em></p>
+<p>As a technician, I assisted staff and students with a variety of technical issues. In particular, scripting in Matlab, creating graphical resources and managing an online research presence.</p>
+</article>
+<article>
+<h3 id="research-assistant">Research Assistant</h3>
+<p><strong><a href="https://www.lincoln.ac.uk/">The University of Lincoln</a></strong><br />
+<em>April 2016 - December 2016</em></p>
+<p>In 2016 I was employed by <a href="https://gmresearch2016.blogs.lincoln.ac.uk/">Professor George Mather</a> at the University of Lincoln as a research assistant, assisting with the final year of a collaboration between himself and Doctor Rebecca Sharman, looking at early visual processing of <a href="https://www.tandfonline.com/doi/abs/10.1080/14786443408648481&quot;">human locomotion</a>.</p>
+</article>
+<h2 id="awards">Awards</h2>
+<article>
+<h3 id="technical-support-in-psychology-research-award">Technical Support in Psychology Research Award</h3>
+<p><strong>From:</strong> British Psychological Society, July 2020<br />
+<strong>To:</strong> Psychology Technician Team (University of Lincoln)</p>
+<blockquote>
+<p>We are so proud of our amazing technicians <a href="https://twitter.com/PsychTechnician">@PsychTechnician</a> who won the Technical Support in Psychology Award from the BPS! <a href="https://twitter.com/BPSOfficial">@BPSOfficial</a><br />
+Well done, and thank you for all your hard work! <a href="https://buff.ly/3ei5JeA">buff.ly/3ei5JeA</a><br />
+<a href="https://x.com/hashtag/psychlincs">#psychlincs</a> <a href="https://twitter.com/bydhifu">@bydhifu</a> <a href="https://twitter.com/ManOCheese">@ManOCheese</a> <a href="https://twitter.com/ToddEParsons">@ToddEParsons</a> <a href="https://twitter.com/___charl">@___charl</a></p>
+</blockquote>
+<ul>
+<li><em><a href="https://x.com/PsychLincoln/status/1282585568032030720">@PsychLincoln via X</a></em></li>
+</ul>
+</article>
+<article>
+<h3 id="team-achievement-award-best-achievement-in-customer-service">Team Achievement Award: Best Achievement In Customer Service</h3>
+<p><strong>From:</strong> University of Lincoln, December 2019<br />
+<strong>To:</strong> Psychology Technician Team</p>
+<blockquote>
+<p>Congratulations to our <a href="https://x.com/hashtag/psychlincs">#psychlincs</a> <a href="https://x.com/hashtag/UoLSMA19">#UoLSMA19</a> winners yesterday! <br />
+<a href="https://twitter.com/thisdrkmckenzie">@thisdrkmckenzie</a> (Best Practice), <a href="https://twitter.com/LMarechal_">@LMarechal_</a> &amp; Dr Ava Horowitz (Individual Merit), <a href="https://twitter.com/kayritchiepsych">@kayritchiepsych</a> (Vice Chancellor's), #pint18lincoln (Public Engagement) and <a href="https://twitter.com/PsychTechnician">@PsychTechnician</a> (Team Achievement)! <br />
+Phew, what a list!</p>
+</blockquote>
+<ul>
+<li><em><a href="https://x.com/PsychLincoln/status/1197477709896716288">@PsychLincoln via X</a></em></li>
+</ul>
+</article>
+<h2 id="professional-memberships">Professional memberships</h2>
+<article>
+<h3 id="university-and-college-union-ucu">University and College Union (UCU)</h3>
+<p><strong>Member</strong><br />
+<em>January 2017 - Present</em></p>
+</article>
+<article>
+<h3 id="university-of-lincoln-school-of-psychology-equality-committee-spec">University of Lincoln School of Psychology Equality Committee (SPEC)</h3>
+<p><strong>Technician Representative, LGBTQI+ Champion</strong><br />
+<em>January 2017 - May 2020</em></p>
+<p>For more information on the School of Psychology Equality Committee, please see the <a href="https://spec.blogs.lincoln.ac.uk">SPEC website</a>.</p>
+</article>
+<article>
+<h3 id="association-of-technical-staff-in-psychology-atsip">Association of Technical Staff in Psychology (ATSiP)</h3>
+<p><strong>Member</strong><br />
+<em>January 2017 - May 2020</em></p>
+<p>For more information on the Association of Technical Staff in Psychology, please see the <a href="https://atsip.ac.uk">ATSiP website</a>.</p>
+</article>
+<article>
+<h3 id="university-of-lincoln-perception-action-cognition-pac-research-group">University of Lincoln Perception, Action &amp; Cognition (PAC) Research Group</h3>
+<p><strong>Member</strong><br />
+<em>April 2016 - May 2020</em></p>
+<p>For more information on the Perception, Action &amp; Cognition group at Lincoln, please see the <a href="https://pacgroup.blogs.lincoln.ac.uk/">PAC group website</a>.</p>
+</article>
+<h1 id="other-projects">Other Projects</h1>
+<h2 id="css-themes">CSS Themes</h2>
+<p>As you may be able to tell from this website, I enjoy making CSS themes. It gives me an outlet for my inherent aesthetic snobbery, I find it relaxing making minor tweaks to the spacing of such-and-such element to get a page rendering exactly how I want it.</p>
+<h3 id="torillic">Torillic</h3>
+<iframe src="https://teparsons.github.io/mkdocs-torillic/dragon/adult_blue_dragon/" class=zoomed-out></iframe>
+
+<p>Torillic is designed to look like the official material for Dungeons &amp; Dragons, I use it to write notes for my TTRPG campaigns and to style them once compiled and hosted to wiki-style websites.</p>
+<p><a href="articles/torillic/">Read more...</a></p>
+<h3 id="lcars">LCARS</h3>
+<p><img alt="LCARS" src="articles/lcars/full.png" /></p>
+<p>LCARS is designed to look like the fictional LCARS operating system from Star Trek. Like Torillic, I like to use it for TTRPG campaign notes, but in this case the more sci-fi adjacent settings.</p>
+<h3 id="whitelines">Whitelines</h3>
+<p><img alt="Whitelines" src="articles/whitelines/full.png" /></p>
+<p>Whitelines is the theme I use most in my day-to-day markdown editing. It's designed to look like <a href="https://www.whitelinespaper.com/">Whitelines</a> notepads, which (being a stationery nerd) are my favourite kind of notebook to write on. So it only makes sense to edit markdown on the same kind of paper!</p>
+<h2 id="python-gui">Python GUI</h2>
+<p>Working with a Python-based graphical user interface (GUI) at Open Science Tools gives me a thorough familiarity with the GUI packages used in Python, sometimes I find myself wishing for certain widgets to exist so in my free time I go ahead and make them.</p>
+<h3 id="pygments-gui"><code>pygments-gui</code></h3>
+<p><code>pygments-gui</code> is a plugin for <a href="https://pygments.org/">Pygments</a>, a Python package which takes code and applies syntactic styling to it. The plugin adds classes and methods for using Pygments within a GUI, styling the contents of text controls live in a fast and efficient way.</p>
+<p>You can find <code>pygments-gui</code> on GitHub <a href="https://github.com/TEParsons/pygments-gui">here</a>.</p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/toddparsons><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>

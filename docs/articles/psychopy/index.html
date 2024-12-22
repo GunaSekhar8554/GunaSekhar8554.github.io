@@ -1,0 +1,327 @@
+<!-- 
+Included only for legacy purposes, this template is no different than main.html as the distinction between homepage and articles is now inferred from file location. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PsychoPy - Todd Parsons</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #d9a35d;
+        --secondary: #4862a6;
+        --tertiary: #b75034;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f2f2f2;
+        --crust: #d2d2d2;
+        --overlay: #b2b2b2;
+        --footer: #000000cc;
+        /* text */
+        --text: #161616;
+        --hltext: #f2f2f2;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Josefin Sans, Noto Color Emoji;
+        --body: Hind, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #d9a35d;
+          --secondary: #46B1C9;
+          --tertiary: #D4ADCF;
+          /* shades */
+          --base: #212530;
+          --mantle: #111318;
+          --crust: #050608;
+          --overlay: #000000;
+          --footer: #00000022;
+          /* text */
+          --text: #f2f2f2;
+          --hltext: #161616;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: 2px solid var(--primary);
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #46B1C9;
+      }
+      footer#footer a:hover {
+        color: #D4ADCF;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/tp.png>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/responsivity.css" rel="stylesheet">  
+    <script src="../../search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "PsychoPy -Todd Parsons",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="article-header">
+    <a href=../.. id="return-home">
+        <i class="fa fa-arrow-left" alt="⇦"></i> Home
+    </a>
+    <h1 id="title">PsychoPy</h1>
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+<li class="nav-item">
+<a href="#graphical-overhaul">Graphical overhaul</a>
+    
+    <ul>
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#parameter-controls">Parameter controls</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#eyetracking">Eyetracking</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#pavlovia-interface">Pavlovia interface</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#camera-support">Camera support</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#plugins">Plugins</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#routine-settings">Routine settings</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#builder-search">Builder search</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+<li class="nav-item">
+<a href="#pilot-mode">Pilot mode</a>
+    
+    <ul>
+    
+    </ul>
+    
+</li>
+
+</ul>
+
+</nav>
+    <p>Below are some of the major projects I've worked on with PsychoPy, arranged by the version they were released in.</p>
+<h1 id="graphical-overhaul">Graphical overhaul</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2020.2.0">2020.2</a></p>
+<p>One of the first things I did with PsychoPy was a revamp of the user interface. Historically, PsychoPy was developed by volunteers in their free time, so generally took a "function over form" approach out of necessity. Once I was working full-time on PsychoPy I decided to spend some time modernising the look and feel, replacing the default wxPython elements with custom, cleaner designs and replacing the old icons with bespoke vectors.</p>
+<p>Below are some before-and-after screenshots of the new look:</p>
+<h3 id="before">Before</h3>
+<p><img alt="PsychoPy Builder 3.2.4" src="screenshots/builder_3_2_4.png" /></p>
+<h3 id="after">After</h3>
+<p><img alt="PsychoPy Builder 2020.2.0" src="screenshots/builder_2020_2_0.png" /></p>
+<h3 id="now">Now</h3>
+<p>I've since tried to keep a consistent visual theme with PsychoPy, so this is what the app looks like in 2024:<br />
+<img alt="PsychoPy Builder 2024.2.2" src="screenshots/builder_2024_2_2.png" /></p>
+<h1 id="parameter-controls">Parameter controls</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2021.1.0">2021.1</a></p>
+<p>In 2021 I revamped the way that individual parameters in PsychoPy Components are represented, expanding on the standard controls (text, checkboxes, drop down menus) to add controls for files, Excel tables, colour values, multi-line code and others. With this I also worked on improving how these values were interpreted by Builder and written into code, and made template Excel files for parameters which people often struggled to format. This was driven by confusion I'd noticed when supporting students using PsychoPy, who often struggled with what values to put into parameters; do file paths need to be relative? Should colours be in RGB? What does the dollar sign mean?</p>
+<h1 id="eyetracking">Eyetracking</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2021.2.0">2021.2</a></p>
+<p>Later in 2021 I worked on adding device-agnostic eyetracking support to PsychoPy, through an existing toolkit called ioHub. ioHub had been supported for some time, but wasn't really visible from the Builder interface. I worked with the author of this package to develop simple Components for adding common eyetracking tasks (starting/stopping the device, calibrating and validating, querying whether participants were looking at a region of interest), which worked the same regardless of what specific device you were using.</p>
+<h1 id="pavlovia-interface">Pavlovia interface</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2022.1.0">2022.1</a></p>
+<p>In 2022 I worked on improving how the local PsychoPy app interacted with the Pavlovia servers, making it easier for users to browse and find studies online, and to sync their own experiments to Pavlovia to both run online and share with collaborators.</p>
+<h1 id="camera-support">Camera support</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2022.2.0">2022.2</a></p>
+<p>In the latter part of 2022 we added webcam support - my role in this was to add the Component to Builder and create code for both Python and JavaScript. This meant coordinating across two teams and figuring out, with the needs of both languages, how to make a single unified interface with common parameters to work on both backends.</p>
+<h1 id="plugins">Plugins</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2023.1.0">2023.1</a></p>
+<p>Plugins were a real paradigm shift for PsychoPy. Previously, in order to support a feature, it had to be added to PsychoPy itself, meaning everyone would get it (and the required packages with it). As PsychoPy got bigger and more capable, this was leading to a problematically large install, so we decided to make PsychoPy pluggable. My role here was to create an interface in the PsychoPy app to pull down a list of known plugins and interact with the backend to install and uninstall them cleanly. I've also since worked a lot on coordinating the various plugin contributors, creating a <a href="https://github.com/psychopy/psychopy-plugin-template">plugin template repo</a> and have even added <a href="https://github.com/TEParsons/psychopy-monkeys">a plugin for making dummy responses when piloting</a> myself.</p>
+<h1 id="routine-settings">Routine settings</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2023.2.0">2023.2</a></p>
+<p>Traditionally, PsychoPy Routines have been essentially just a list of Component objects. In the latter part of 2023 however I introduced the concept of Routine Settings, allowing users to control parameters of the Routine itself. This meant entire Routines could be disabled for testing, and the whole Routine could have a maximum time (rather than having to infer it from the longest Component). </p>
+<h1 id="builder-search">Builder search</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2023.2.0">2023.2</a></p>
+<p>As it always goes with programming, the things users really click with aren't the things you spent the most time on. Sometimes a small feature you whip up in a day or two ends up being a game changer; the search box for Builder was one such feature. It's incredibly simple - you just press CTRL/CMD + F and a dialog will appear. Type into that dialog and it will show you where your search term features in Components in your experiment. Nothing programatically difficult, but the impact has been huge! Users with dozens of Routines were previously having to manually sift through them all to find one syntax error or undefined variable in a Code Component, now they can jump right to it by just searching the error text.</p>
+<p><img alt="PsychoPy Builder search dialog" src="screenshots/find_2024_2_2.png" /></p>
+<h1 id="pilot-mode">Pilot mode</h1>
+<p><a href="https://github.com/psychopy/psychopy/releases/tag/2024.1.0">2024.1</a></p>
+<p>There are a number of researcher behaviours which are generally good practice, but aren't handled by PsychoPy itself. For example, when building an experiment, it's a good idea to run it in windowed mode so you're not stuck behind a full screen experiment if you hit an error. It's also a good idea to have a verbose logging level when building, but you may not want that many messages when running properly. In 2024 I added a "pilot mode" to PsychoPy, a running mode which tells PsychoPy that the user isn't currently testing and is just trying their experiment out. PsychoPy then knows to do this "good behaviour" - forcing the window out of full screen, increasing logging verbosity, etc.</p>
+<p>To make sure users don't accidentally gather data in pilot mode, I also added a big obnoxious orange outline, for safety. Hard to miss, right?</p>
+<p><img alt="PsychoPy window while running in pilot mode" src="screenshots/window_pilot_2024_2_2.png" /></p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/toddparsons><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="../../search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>

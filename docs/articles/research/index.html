@@ -1,0 +1,217 @@
+<!-- 
+Included only for legacy purposes, this template is no different than main.html as the distinction between homepage and articles is now inferred from file location. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Research - Todd Parsons</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #d9a35d;
+        --secondary: #4862a6;
+        --tertiary: #b75034;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f2f2f2;
+        --crust: #d2d2d2;
+        --overlay: #b2b2b2;
+        --footer: #000000cc;
+        /* text */
+        --text: #161616;
+        --hltext: #f2f2f2;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Josefin Sans, Noto Color Emoji;
+        --body: Hind, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #d9a35d;
+          --secondary: #46B1C9;
+          --tertiary: #D4ADCF;
+          /* shades */
+          --base: #212530;
+          --mantle: #111318;
+          --crust: #050608;
+          --overlay: #000000;
+          --footer: #00000022;
+          /* text */
+          --text: #f2f2f2;
+          --hltext: #161616;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: 2px solid var(--primary);
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #46B1C9;
+      }
+      footer#footer a:hover {
+        color: #D4ADCF;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/tp.png>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/responsivity.css" rel="stylesheet">  
+    <script src="../../search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Research -Todd Parsons",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="article-header">
+    <a href=../.. id="return-home">
+        <i class="fa fa-arrow-left" alt="⇦"></i> Home
+    </a>
+    <h1 id="title">Research</h1>
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+</ul>
+
+</nav>
+    <p><strong><em>How Do Player-Avatar Relationships Mediate Physiological Responses To In-Game Events?</em></strong></p>
+<p>When looking at players' physiological responses to watching an avatar being beaten up in Wii BoxingTM, <a href="http://journals.sagepub.com/doi/pdf/10.1177/0093650215570652">Ratan &amp; Dawson (2016)</a> found that they responded more when they felt emotionally connected to the avatar. So this physiological response to in-game events is affected in some way by our relationship to the avatar we are playing as.</p>
+<p><a href="http://psycnet.apa.org/doiLanding?doi=10.1037%2Fppm0000170">Downs, Bowman &amp; Banks (2017)</a> describe what they call a "Polythetic Model of Player Identification", in simple terms this means several different aspects of player-avatar relationships interacting to produce an overall experience of connectedness between player and avatar. They split player-avatar identification into six categories:</p>
+<ul>
+<li><strong>Physical Similarity</strong>: How much does the avatar physically resemble you?</li>
+<li><strong>Value Homophily</strong>: How close are the avatar's views, background and outlook on life to your own?</li>
+<li><strong>Value Homophily</strong>: How close are the avatar's views, background and outlook on life to your own?</li>
+<li><strong>Wishful Identification</strong>: Do you wish you were more like the avatar?</li>
+<li><strong>Liking</strong>: Do you like the avatar?</li>
+<li><strong>Perspective-Taking</strong>: Can you take the avatar's perspective, sympathising with its experiences and motives?</li>
+<li><strong>Embodiment</strong>: Does it feel as if you are acting through the avatar, rather than merely controlling it?</li>
+</ul>
+<p>My MSc thesis research asked the following question: Which of elements of player identification are responsible for <a href="http://journals.sagepub.com/doi/pdf/10.1177/0093650215570652">Ratan &amp; Dawson's (2016)</a> effect?</p>
+<p>I investigated this using the game <a href="https://store.steampowered.com/app/13230/Unreal_Tournament_2004_Editors_Choice_Edition/">Unreal Tournament 2004</a>TM; an action-packed first-person shooter in which players compete for "kills" and seek to avoid "deaths". My fellow <a href="http://psychtech.co.uk">technicians</a> Foivos Vantzos, Ferenc Igali and I wrote a mutator for the game; a piece of code which modifies how the game works. This mutator forces the game output two pieces of data every 0.2 seconds for the duration of gameplay: The player's current health and their number of kills. Using this data I was able to identify timestamps of when players took significant (&gt;20%) damage and when they killed an enemy.</p>
+<p>Cross-correlating this with GSR data taken whilst playing gave a measure of how responsive players were to in-game events, both positive (kills) and negative (damage). I also asked participants to answer the same questions used by <a href="http://psycnet.apa.org/doiLanding?doi=10.1037%2Fppm0000170">Downs, Bowman &amp; Banks (2017)</a> to determine in what way they relate to their chosen avatar.</p>
+<p>By comparing the two sets of data, responsiveness to in-game events and polythetic factors of player identification, I hope to clarify what specifically it is about human-avatar connections which affect our physiological responses to in-game events.</p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/toddparsons><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="../../search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>

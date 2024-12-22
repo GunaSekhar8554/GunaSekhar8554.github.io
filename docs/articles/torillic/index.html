@@ -1,0 +1,204 @@
+<!-- 
+Included only for legacy purposes, this template is no different than main.html as the distinction between homepage and articles is now inferred from file location. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Torillic - Todd Parsons</title>
+    <style>
+      /* load heading font */
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@700');
+
+      /* load body font */
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@700');
+
+      /* load mono font */
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@400');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@700');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains Mono:ital,wght@700');
+
+      /* load emoji font */
+      @font-face {
+        font-family: "Noto Color Emoji";
+        src: url('../../assets/fonts/emoji/NotoColorEmoji-Regular.ttf');
+        font-weight: 400;
+      }
+  
+      :root {
+        /* colors */
+        --primary: #d9a35d;
+        --secondary: #4862a6;
+        --tertiary: #b75034;
+        /* shades */
+        --base: #ffffff;
+        --mantle: #f2f2f2;
+        --crust: #d2d2d2;
+        --overlay: #b2b2b2;
+        --footer: #000000cc;
+        /* text */
+        --text: #161616;
+        --hltext: #f2f2f2;
+        color: var(--text);
+        /* background-specific text */
+        --primary-text: var(--hltext);
+        --secondary-text: var(--hltext);
+        --tertiary-text: var(--hltext);
+        --base-text: var(--text);
+        --mantle-text: var(--text);
+        --crust-text: var(--text);
+        --overlay-text: var(--hltext);
+        --footer-text: var(--hltext);
+        /* fonts */
+        --heading: Josefin Sans, Noto Color Emoji;
+        --body: Hind, Noto Color Emoji;
+        --mono: JetBrains Mono, Noto Color Emoji;
+        font-family: var(--body); 
+      }
+      /* dark mode */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* colors */
+          --primary: #d9a35d;
+          --secondary: #46B1C9;
+          --tertiary: #D4ADCF;
+          /* shades */
+          --base: #212530;
+          --mantle: #111318;
+          --crust: #050608;
+          --overlay: #000000;
+          --footer: #00000022;
+          /* text */
+          --text: #f2f2f2;
+          --hltext: #161616;
+          color: var(--text);
+          /* background-specific text */
+          --primary-text: var(--text);
+          --secondary-text: var(--text);
+          --tertiary-text: var(--text);
+          --base-text: var(--text);
+          --mantle-text: var(--text);
+          --crust-text: var(--text);
+          --overlay-text: var(--hltext);
+          --footer-text: var(--text);
+        }
+      }
+      /* style settings */
+      header#header {
+        grid-template-columns: 12rem auto 12rem;
+      }
+      body#background {
+        background: fixed center/cover var(--base);
+        
+        
+      }
+      #background-gradient {
+        background: linear-gradient(
+          45deg, 
+          color-mix(in srgb, var(--mantle) 80%, transparent), transparent, color-mix(in srgb, var(--crust) 20%, transparent)
+        );
+      }
+      content#content {
+        padding: 0 3rem;
+        background: color-mix(in srgb, var(--base) 0%, transparent);
+        border-left: 2px solid var(--primary);
+        border-right: none;
+      }
+      #avatar {
+        
+        border-radius: 50%;
+        
+      }
+      footer#footer a {
+        color: #46B1C9;
+      }
+      footer#footer a:hover {
+        color: #D4ADCF;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href=assets/tp.png>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/responsivity.css" rel="stylesheet">  
+    <script src="../../search/main.js"></script>
+    <script src="https://kit.fontawesome.com/b57355f8ac.js" crossorigin="anonymous"></script>
+    <script id="altmetric-embed-js" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/altmetric_badges-e7ba41a192efc3e63f5d48f8a1916dec4b1b49c01075bc7b39481408957b3b28.js"></script>
+    <link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-59614f5c46b49b21eeef3bb28c4fb38d1e7069e8d014752fcb66e84942556802.css">
+    <script>
+      function on_share() {
+        navigator.share({
+          url: document.URL,
+          title: "Torillic -Todd Parsons",
+        });
+      }
+    </script>
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  
+<a id="share-btn" onclick="on_share()">
+  <i class="fa fa-share-alt" alt="🔗"></i>
+</a>
+
+  
+  <header id="article-header">
+    <a href=../.. id="return-home">
+        <i class="fa fa-arrow-left" alt="⇦"></i> Home
+    </a>
+    <h1 id="title">Torillic</h1>
+</header>
+  
+  <main id="page">
+    <nav class="vertical" id="toc">
+
+<ul>
+
+</ul>
+
+</nav>
+    <p>Torillic came out of me wanting to use markdown to write notes for my TTRPG campaigns; I'd found the markdown editor <a href="https://typora.io/">Typora</a> and loved that it lets you write your own custom themes in CSS, so I set about making something which looks like the official resources for Dungeons &amp; Dragons.</p>
+<p>You can view/download the Typora theme <a href="https://theme.typora.io/theme/Torillic/">here</a>, below are some previews of how it looks in Typora:</p>
+<p><img alt="Torillic in fullscreen" src="full.png" /></p>
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    
+
+<p>Compiled from markdown using <a href="https://www.mkdocs.org/">MkDocs</a>. Theme is <a href="https://teparsons.github.io/mkdocs-landing/">Landing</a> by <a href="https://toddparsons.co.uk">Todd Parsons</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id=page-source href=https://github.com/TEParsons/toddparsons><i class="fa-brands fa-github"></i> Page source</a>
+
+
+
+<script src="../../search/main.js"></script>
+
+  </footer>
+</body>
+
+</html>
