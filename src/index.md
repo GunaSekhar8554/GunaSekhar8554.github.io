@@ -7,7 +7,7 @@ I'm a Python programmer with a background in psychological research, a hobbyist 
 
 # PsychoPy
 
-[Psychopy](https://psychopy.org) is Python library and accompanying graphical interface for building psychology experiments, designed to be accurate enough for publication-quality research but intuitive enough for undergraduate students. I've been using PsychoPy for many years as a student and technician for many years, and since May 2020 I've been working as a Python developer on PsychoPy. I mostly work on the front-end; improving the look and feel of the app, creating new Components and defining the code which Builder writes for them.
+[PsychoPy](https://psychopy.org) is Python library and accompanying graphical interface for building psychology experiments, designed to be accurate enough for publication-quality research but intuitive enough for undergraduate students. I've been using PsychoPy as a student and technician for many years, and since May 2020 I've been working as a Python developer on PsychoPy. I mostly work on the front-end; improving the look and feel of the app, creating new Components and defining the code which Builder writes for them.
 
 ![PsychoPy Builder 2024.2.2](articles/psychopy/screenshots/builder_2024_2_2.png)
 
